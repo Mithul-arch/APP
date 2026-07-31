@@ -1,0 +1,20 @@
+    n = int(input("Enter Your Number: "))
+
+    a = 0
+    b = 1
+    if n<=0:
+        print("Wrong Input")
+    elif n == 1:
+        print("Fibo 1st place: ", a)
+        print("---------------------")
+    elif n == 2:
+        print("Fibo 1st place: ", a)
+        print("Fibo 2nd place: ", b)
+        print("---------------------")
+    else:
+        for i in range(3, n+1):
+            c = a+b
+            a = b
+            b = c
+        print("Fibo Number at position", n, "is: ", b)
+        print("------------------------------------------")
