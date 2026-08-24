@@ -25,3 +25,4 @@ def knapsack_bottom_up(weights, values, capacity):
 weights = [1, 3, 4, 5]
 values = [1, 4, 5, 7]
 capacity = 7
+print("Bottom-Up Result:", knapsack_bottom_up(weights, values, capacity))
